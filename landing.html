@@ -10,6 +10,10 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!--font awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!--Angular JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <!--our js -->
+    <script type="text/javascript" src="js/landing.js"></script>
     <link rel='stylesheet' type="text/css" href="css/landing.css">
 </head>
 
@@ -30,10 +34,13 @@
                         <a href="#"> Home</a>
                     </li>
                     <li>
-                        <a href="#"> About</a>
+                        <a href="#">Resume Templates</a>
                     </li>
                     <li>
-                        <a href="#"> Reminders</a>
+                        <a href="#">Application Deadlines</a>
+                    </li>
+                    <li>
+                        <a href="#"> Useful Tips</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -41,6 +48,12 @@
                         <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign-out </a>
                     </li>
                 </ul>
+                <!--Reminders-->
+                <div ng-controller="reminder">
+
+
+
+                </div>
             </div>
         </div>
     </nav>
