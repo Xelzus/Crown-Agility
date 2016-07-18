@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="reminder">
 
 <head>
     <title>Forward</title>
@@ -56,14 +56,34 @@
             <h1> Welcome to your dashboard</h1>
             <hr>
             <div class="col-sm-6 text-left">
+                <p> 1st div, Some angular needed here</p>
                 <!--Reminders-->
-                <div ng-controller="reminder">
-                    <h1> Create a reminder</h1>
+                <div ng-controller="reminderController as reminder">
+                    <form role="form">
+                        <div class="form-group">
+                            <div class="col-xs-9">
+                                <input type="text" class="form-control" placeholder="Title">
+                                <br>
+                            </div>
+                            <div class="col-xs-9">
+                                <textarea type="text" placeholder="Description" class="form-control" rows='3'></textarea>
+                                <br>
+                            </div>
+                            <div class="col-xs-9">
+                                <input type="date" class="form-control" placeholder="Remind me on">
+                                <br>
+                            </div>
+                            <div class="col-xs-9">
+                                <button type="submit" class="btn btn-primary"> Create Reminder </button>
+                                <br>
+                            </div>
+                        </div>
+                    </form>
 
                 </div>
             </div>
             <div class="col-sm-6 text-left">
-
+                <p> 2nd div where we load reminders from database + additional profile data/ this is the core that actually needs angularJS</p>
 
             </div>
         </div>
