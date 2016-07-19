@@ -14,39 +14,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <!--our js -->
     <script type="text/javascript" src="js/landing.js"></script>
-    <link rel='stylesheet' type="text/css" href="css/landing.css">
-</head>
+    <link rel='stylesheet' type="text/css" href="css/landing.css"> </head>
 
 <body>
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data - toggle="collapse" data - target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"> Logo </a>
-            </div>
+                <button type="button" class="navbar-toggle" data - toggle="collapse" data - target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#"> Logo </a> </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a href="#"> Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Resume Templates</a>
-                    </li>
-                    <li>
-                        <a href="#">Application Deadlines</a>
-                    </li>
-                    <li>
-                        <a href="#"> Useful Tips</a>
-                    </li>
+                    <li class="active"> <a href="#"> Home</a> </li>
+                    <li> <a href="#">Resume Templates</a> </li>
+                    <li> <a href="#">Application Deadlines</a> </li>
+                    <li> <a href="#"> Useful Tips</a> </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign-out </a>
-                    </li>
+                    <li> <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign-out </a> </li>
                 </ul>
             </div>
         </div>
@@ -55,7 +38,7 @@
         <div class="row content">
             <h1> Welcome to your dashboard</h1>
             <hr>
-            <div class="col-sm-6 text-left">
+            <div class="col-sm-5 text-left">
                 <p> 1st div, Some angular needed here</p>
                 <!--Reminders-->
                 <div ng-controller="reminderController as reminder">
@@ -63,33 +46,41 @@
                         <div class="form-group">
                             <div class="col-xs-9">
                                 <input type="text" class="form-control" placeholder="Title">
-                                <br>
-                            </div>
+                                <br> </div>
                             <div class="col-xs-9">
                                 <textarea type="text" placeholder="Description" class="form-control" rows='3'></textarea>
-                                <br>
-                            </div>
+                                <br> </div>
                             <div class="col-xs-9">
                                 <input type="date" class="form-control" placeholder="Remind me on">
-                                <br>
-                            </div>
+                                <br> </div>
                             <div class="col-xs-9">
                                 <button type="submit" class="btn btn-primary"> Create Reminder </button>
-                                <br>
-                            </div>
+                                <br> </div>
                         </div>
                     </form>
-
                 </div>
             </div>
-            <div class="col-sm-6 text-left">
+            <div class="col-sm-5 text-left">
                 <p> 2nd div where we load reminders from database + additional profile data/ this is the core that actually needs angularJS</p>
-
+            </div>
+            <div class="col-sm-2 sidenav">
+                <h4>John's Blog</h4>
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#section1">Home</a></li>
+                    <li><a href="#section2">Friends</a></li>
+                    <li><a href="#section3">Family</a></li>
+                    <li><a href="#section3">Photos</a></li>
+                </ul>
+                <br>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search Blog.."> <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span> </button>
+                    </span>
+                </div>
             </div>
         </div>
     </div>
-
-
 </body>
 
 </html>
