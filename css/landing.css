@@ -35,3 +35,11 @@ h3,
 p {
     color: white;
 }
+
+.savedReminders {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
