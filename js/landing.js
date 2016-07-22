@@ -14,17 +14,6 @@
     });
 
     var reminderArray = [
-        {
-            title: 'meeting with school counselor'
-            , description: 'sat scores'
-            , date: '12/31/2016'
-        },
-
-        {
-            title: 'meeting with school teacher'
-            , description: 'act scores'
-            , date: '12/31/2014'
-        }
     ];
 
 })();
