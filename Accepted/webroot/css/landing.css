@@ -1,5 +1,5 @@
 body {
-    background-image: url(../Images/wood.jpg);
+    background-image: url(../img/wood.jpg);
 }
 
 .navbar {
@@ -64,7 +64,7 @@ a:hover, a:actuve{
 /* everything from here down is for the resume templates*/
 
 img.align-right	{
-				
+
                 width: 20px;
 				height: 20px;}
 
@@ -78,12 +78,12 @@ img.align-right	{
 #rcorners3 {
     border-radius: 35px;
     border: 6px solid cadetblue;
-    padding: 20px; 
+    padding: 20px;
     margin-left: 100px;
     background-color: tan;
 }
 #titles {
-    color: cadetblue; 
+    color: cadetblue;
     font-weight: 400;
     text-align: left;
     font-size: 33px;
@@ -93,7 +93,7 @@ img.align-right	{
 }
 
 #title2{
-    color: cadetblue; 
+    color: cadetblue;
     font-weight: 400;
     text-align: center;
     font-size: 33px;
@@ -107,7 +107,7 @@ img.align-right	{
     font-family: fantasy;
     text-align: left;
     margin-left: 20px;
-    
+
 }
 
 #insidebullets
@@ -117,7 +117,7 @@ img.align-right	{
     text-align: left;
     font-family: sans-serif;
     margin-left: 40px;
-    
+
 }
 #text{
     color: black;
@@ -135,7 +135,7 @@ img.align-left {
 				height: 300px;
                 margin-right: center;
                 margin-top: 110px;
-    
+
 }
 
 img.align-left1 {
@@ -143,7 +143,7 @@ img.align-left1 {
 				height: 300px;
                 margin-left: 180px;
                 margin-top: 25px;
-    
+
 }
 
 img.align-right {
@@ -151,5 +151,5 @@ img.align-right {
 				height: 180px;
                 margin-right: 10px;
                 margin-top: 310px
-    
+
 }
