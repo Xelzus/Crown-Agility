@@ -46,24 +46,52 @@
     <div class="container-fluid" >
         <div class="row content col-center-block">
             <h1 class = "col-center-block text-center"> Edit Profile</h1>
+            <hr>
            <div class="col-sm-5 col-center-block">
                 <div>
                     <form role="form" ng-controller="myCtrl" ng-submit='editprofile()'>
                         <div class="form-group">
                             <div class="col-xs-10">
-                                <span class = 'savedReminders'>Email: {{email}}</span>
-                                <input type="text" class="form-control" placeholder="Which email would you like to use?" ng-model="email" ><button ng-click="saveEmail" class="btn btn-primary">Save</button>
-                                <br>
+                                <h2>Email</h2>
+                                <div ng-show="editEmail">
+                                    <p class = 'savedReminders' style = "float:left">{{email}}</p>
+                                    <button class = "btn btn-primary" style = "float:right" ng-click = "editEmail=!editEmail">Edit <span class = "glyphicon glyphicon-edit"></span></button>
+                                </div>
+                                <div class="input-group" ng-hide="editEmail">
+                                    <input type="text" class="form-control" placeholder="Which email would you like to use?" ng-model='email' >
+                                    <span class = "input-group-btn">
+                                        <button ng-click="saveEmail(); editEmail=!editEmail" class="btn btn-primary">Save</button>
+                                    </span>
+                                    <br>
+                                </div>
                             </div>
                             <div class="col-xs-10">
-                                <p class = 'savedReminders'>Age: {{age}}</p>
-                                <input type="text" placeholder="How old are you?" class="form-control" ng-model='age'>
-                                <br>
+                                <h2>Age</h2>
+                                <div ng-show="editAge">
+                                    <p class = 'savedReminders' style = "float:left">{{age}}</p>
+                                    <button class = "btn btn-primary" style = "float:right" ng-click = "editAge=!editAge">Edit <span class = "glyphicon glyphicon-edit"></span></button>
+                                </div>
+                                <div class="input-group" ng-hide="editAge">
+                                    <input type="text" placeholder="How old are you?" class="form-control" ng-model='age'>
+                                    <span class = "input-group-btn">
+                                        <button ng-click="saveAge(); editAge=!editAge" class="btn btn-primary">Save</button>
+                                    </span>
+                                    <br>
+                                </div>
                             </div>
                             <div class="col-xs-10">
-                                <span class = 'savedReminders'>School: {{school}}</span>
-                                <input type="text" class="form-control" placeholder="Which school are you from?" ng-model='school'>
-                                <br>
+                                <h2>School</h2>
+                                <div ng-show="editSchool">
+                                    <p class = 'savedReminders' style = "float:left">{{school}}</p>
+                                    <button class = "btn btn-primary" style = "float:right" ng-click = "editSchool=!editSchool">Edit <span class = "glyphicon glyphicon-edit"></span></button>
+                                </div>
+                                <div class="input-group" ng-hide="editSchool">
+                                    <input type="text" placeholder="How old are you?" class="form-control" ng-model='school'>
+                                    <span class = "input-group-btn">
+                                        <button ng-click="saveSchool(); editSchool=!editSchool" class="btn btn-primary">Save</button>
+                                    </span>
+                                    <br>
+                                </div>
                             </div>
                             <div class="col-xs-10">
                                 <button type="submit" class="btn btn-primary"> Save Profile </button>
