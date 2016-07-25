@@ -1,9 +1,5 @@
 (function () {
 var app = angular.module('editProfileApp', []); 
-    app.controller('displayController', function($scope){
-       var email=$scope.email;
-        
-    });
     
     app.controller('myCtrl', function($scope) {
         
@@ -19,18 +15,18 @@ var app = angular.module('editProfileApp', []);
         
         $scope.saveEmail=function()
         {
-            
-        }
+            $scope.editEmail=!$scope.editEmail;
+        };
         
         $scope.saveAge=function()
         {
             
-        }
+        };
         
         $scope.saveSchool=function()
         {
             
-        }
+        };
     });
 
 })();
