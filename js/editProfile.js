@@ -5,7 +5,7 @@ var app = angular.module('editProfileApp', []);
         
         
         $scope.email= "Someone@something.com";
-        $scope.age= "22";
+        $scope.age= 22;
         $scope.sex="male";
         $scope.school= "Florida Atlantic University";
         
@@ -20,12 +20,12 @@ var app = angular.module('editProfileApp', []);
         
         $scope.saveAge=function()
         {
-            
+            $scope.editAge=!$scope.editAge;
         };
         
         $scope.saveSchool=function()
         {
-            
+            $scope.editSchool=!$scope.editSchool;
         };
     });
 
